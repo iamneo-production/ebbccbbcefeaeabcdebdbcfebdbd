@@ -1,0 +1,31 @@
+<div style="display: flex;height: 350px;justify-content: center;align-items: center; width:400px; margin: 200px 20% 24px 30%; background-color: blueviolet;">
+  <div class="main-container">
+      <form action="">
+        <div class="selection-cont" style="display: flex; flex-direction: row;">
+          <select #c1 name="" id="fromCurrency">
+            <option id="USD" value="1.126735">USD</option>
+            <option id="GBP" value="0.876893">GBP</option>
+            <option id="INR" value="79.677056">INR</option>
+          </select>
+          <p>to</p>
+          <h1></h1>
+          <select #c2 name="" id="toCurrency">
+            <option id="USD" value="1.126735">USD</option>
+            <option id="GBP" value="0.876893">GBP</option>
+            <option id="INR" value="79.677056">INR</option>
+          </select>
+        </div>
+        <div calss="inputno">
+          <input #c3 id="amount" type="text">
+        </div>
+        <button type="button" id="submitButton" (click)="Currencyconvert(c1.value,c2.value,c3.value)">Submit</button>
+        <div id="result" class="result-container">
+          
+          <div style="width: 100px; height: 20px; background-color: white;">
+            <p id="resValue" style="color: red;">{{result}}</p>
+          </div>
+        
+      </div>
+      </form>
+  </div>
+</div>
